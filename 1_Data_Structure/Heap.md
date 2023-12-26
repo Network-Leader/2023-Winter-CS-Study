@@ -24,11 +24,11 @@
 * **최대 힙(Max-Heap)** : 모든 부모 노드가 자식 노드보다 크거나 같은 값을 갖는 힙, 따라서 루트노드가 가장 큰 값
 * key(부모노드) ≥ key(자식노드)
 
-![image](https://github.com/nodb/test/assets/71473708/6602b1ed-8fb6-4a30-882c-fa9aebd4d664)
+<img src = "img/heap-1.png"/>
 * **최소 힙(Min-Heap)** : 모든 부모 노드가 자식 노드보다 작거나 같은 값을 갖는 힙, 따라서 루트노드가 가장 작은 값
 * key(부모노드) ≥ key(자식노드)
 
-![image](https://github.com/nodb/test/assets/71473708/53f350e5-2f3a-4c8c-a4e5-8332f3d5c4f1)
+<img src = "img/heap-2.png"/>
 
 * 오름차순 구현을 위해서는 Min Heap을 사용하고, 내림차순 구현을 위해서는 Max Heap을 사용하는 것이 편하다.
 
@@ -37,7 +37,7 @@
 * 완전 이진 트리이므로 중간에 비어있는 요소가 없기 때문에 배열 사용
 * 인덱스가 1부터 시작
 
-![image](https://github.com/nodb/test/assets/71473708/ee4dc3bf-aca7-433a-974e-31063a62dcbe)
+<img src = "img/heap-3.png"/>
 * **왼쪽 자식 노드 index** : 2 * (부모 노드 index)
 * **오른쪽 자식 노드 index** : 2 * (부모 노드 index) + 1
 * **부모 노드 index** : (자식 노드 index) / 2
@@ -68,16 +68,16 @@ void push(int data) {
 
 * 예) 최소 힙에서 새로 들어올 노드의 값 : 3
 
-![image](https://github.com/nodb/test/assets/71473708/a4d4052f-0b81-421e-ac5e-a3716415c912)
+<img src = "img/heap-4.png"/>
 * 3과 부모노드 7과 비교 : 3이 더 작으므로 자리 변경
 
-![image](https://github.com/nodb/test/assets/71473708/0893ebd4-a0ea-4248-8d8c-958a6b71cffa)
+<img src = "img/heap-5.png"/>
 * 3과 부모노드 5과 비교 : 3이 더 작으므로 자리 변경
 
-![image](https://github.com/nodb/test/assets/71473708/ee865ea4-7a9b-4b67-aefc-888d29eab9ef)
+<img src = "img/heap-6.png"/>
 * 3과 부모노드 1과 비교 : 3이 더 크므로 멈추기
 
-![image](https://github.com/nodb/test/assets/71473708/d3abeea6-fa35-47a6-b98f-3050d279bcf1)
+<img src = "img/heap-7.png"/>
 
 * 최악의 경우 새로 추가된 노드가 루트노트까지 비교하며 올라간다.
 * 시간복잡도 : O(log n)
@@ -123,10 +123,10 @@ int pop() {
 * 예) 최소힙
 * 루트 노드를 반환(삭제)하고 마지막 노드를 루트 노드 자리로 변경
 
-![image](https://github.com/nodb/test/assets/71473708/cf6b9275-3885-4887-8d93-3255650b7591)
+<img src = "img/heap-8.png"/>
 * 7의 왼쪽, 오른쪽 자식 노드 중 더 우선순위가 높은 2와 비교를 진행
 
-![image](https://github.com/nodb/test/assets/71473708/88e0f6d0-61f0-4068-acb1-7dae9e539802)
+<img src = "img/heap-9.png"/>
 
 * 최악의 경우 루트노트부터 가장 아래까지 내려간다.
 * 시간복잡도 : O(log n)
@@ -152,7 +152,7 @@ int pop() {
 * 예) 가장 작은 것부터 가장 큰 것까지 정렬하고 싶은 리스트 { 6, 5, 3, 1, 8, 7, 2, 4 }
 1. 힙 생성
   
-![image](https://github.com/nodb/test/assets/71473708/1080de48-7f81-4751-8551-2d89951439ff)
+<img src = "img/heap-10.png"/>
   
 |힙|추가 요소|교체 요소|
 |---|---|---|
