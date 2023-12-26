@@ -27,7 +27,6 @@
 **미리 할당된 크기에** 연관된 데이터를 메모리 상에 **연속적으로** 저장하는 **선형 자료구조**
 
 ![array_1.png](..%2Fimg%2Farray_1.png)
-![https://velog.velcdn.com/images/dlgosla/post/3d29d477-fcbd-4abb-838d-2e68d9797895/image.png](https://velog.velcdn.com/images/dlgosla/post/3d29d477-fcbd-4abb-838d-2e68d9797895/image.png)
 
 ### 특징
 
@@ -67,8 +66,6 @@
 - 첫번째 노드를 헤드(Head), 마지막 노드를 테일(Tail) 이라고 한다.
 - 
 ![array_2.png](..%2Fimg%2Farray_2.png)
-![https://velog.velcdn.com/images/dlgosla/post/603b76c0-7384-4433-be8f-025756d1b282/image.png](https://velog.velcdn.com/images/dlgosla/post/603b76c0-7384-4433-be8f-025756d1b282/image.png)
-
 
 ### 특징
 
@@ -110,7 +107,6 @@
 ## 배열 VS 연결 리스트
 
 ![array_3.png](..%2Fimg%2Farray_3.png)
-![https://velog.velcdn.com/images/dlgosla/post/d807e637-3d2d-47e0-b6ab-4308807daf4c/image.png](https://velog.velcdn.com/images/dlgosla/post/d807e637-3d2d-47e0-b6ab-4308807daf4c/image.png)
 
 데이터 접근이 자주 일어날 때 -> 배열
 
@@ -139,7 +135,6 @@
 ## 원형 연결 리스트 (Circular Linked List)
 
 ![array_4.png](..%2Fimg%2Farray_4.png)
-![https://velog.velcdn.com/images/dlgosla/post/343f8b2c-bffc-4973-a3b3-b35482e7e841/image.png](https://velog.velcdn.com/images/dlgosla/post/343f8b2c-bffc-4973-a3b3-b35482e7e841/image.png)
 
 **마지막 노드가 null을 가리키는 게 아닌 처음 노드를 가리키는 구조**이다.
 
