@@ -2,7 +2,7 @@
 * 요소들이 서로 복잡하게 연결되어 있는 관계를 표현하는 자료구조
 * 정점(vertex), 간선(edge)의 집합
 
-![image](https://github.com/nodb/test/assets/71473708/bf7a7b9e-f608-4164-904c-be12887135f5)
+<img src = "img/graph-1.png"/>
 * G = (V, E)
 
 ### 용어
@@ -24,7 +24,7 @@
 * 정점 Vi와 Vj를 연결하는 간선 : (Vi, Vj)
 * (Vi, Vj)와 (Vj, Vi)는 같은 간선
 
-![image](https://github.com/nodb/test/assets/71473708/f38c61ed-3f3a-470b-ba04-813b6ecc0e36)
+<img src = "img/graph-2.png"/>
 * 그래프 G1
 * V(G1)={A,B,C,D}
 * E(G1)={(A,B), (A,D), (B,C), (B,D), (C,D)}
@@ -38,7 +38,7 @@
   * Vj : 머리(head)
 * <Vi, Vj>와 <Vj, Vi>는 서로 다른 간선
 
-![image](https://github.com/nodb/test/assets/71473708/7d20a8c9-9e65-43bd-9b8e-5322f0b96e6d)
+<img src = "img/graph-11.png"/>
 * 그래프 G2
 * V(G1)={A,B,C,D}
 * E(G1)={<A,B>, <A,D>, <B,C>, <B,D>, <C,D>}
@@ -51,28 +51,28 @@
   * 무방향 그래프 : n(n-1)/2
   * 방향 그래프 : n(n-1)
 
-![image](https://github.com/nodb/test/assets/71473708/1e2544bb-3359-4e62-9fe7-71e09d91f262)
+<img src = "img/graph-3.png"/>
 
 ---
 
 4. 부분 그래프(Subgraph)
 * 기존의 그래프에서 일부 정점이나 간선을 제외하여 만든 그래프
 
-![image](https://github.com/nodb/test/assets/71473708/864dfd8f-12c6-4485-a438-8ad345651dd6)
+<img src = "img/graph-4.png"/>
 
 ---
 
 5. 가중 그래프(Weight Graph)
 * 정점을 연결하는 간선에 가중치(weight)를 할당한 그래프
 
-![image](https://github.com/nodb/test/assets/71473708/060ea4ab-8abb-485d-8e4d-2d4743154439)
+<img src = "img/graph-5.png"/>
 
 ---
 
 6. 유향 비순환 그래프(DAG, Directed Acyclic Graph)
 * 방향 그래프에서 사이클이 없는 그래프
 
-![image](https://github.com/nodb/test/assets/71473708/b1a23f96-2d14-465d-83d9-b869412b9bbd)
+<img src = "img/graph-6.png"/>
 
 
 ---
@@ -80,7 +80,7 @@
 7. 연결 그래프(Connected Graph)
 * 떨어져 있는 정점이 없는 그래프
 
-![image](https://github.com/nodb/test/assets/71473708/90f9bf89-913f-4807-b673-8d58be918c92)
+<img src = "img/graph-7.png"/>
 
 
 ---
@@ -88,11 +88,11 @@
 8. 비연결(단절) 그래프(Disconnected Graph)
 * 연결되지 않은 정점이 있는 그래프
 
-![image](https://github.com/nodb/test/assets/71473708/13149ed5-486c-4638-9a38-43d6dd0c0d11)
+<img src = "img/graph-8.png"/>
 
 # 그래프 구현
 1. 인접 행렬(Adjacency Matrix)
-![image](https://github.com/nodb/test/assets/71473708/e0ef00a3-8109-4516-90d5-7122bf8e7075)
+<img src = "img/graph-9.png"/>
 * 2차원 배열로 그래프를 구현하는 방식
 * 그래프에 간선이 많이 존재하는 밀집 그래프(Dense Graph)에서 사용
 * 간선이 존재 : 1, 없는 칸 : 0
@@ -111,7 +111,7 @@
 ---
 
 2. 인접 리스트(Adjacency List)
-![image](https://github.com/nodb/test/assets/71473708/2c392fb7-ad48-4adf-8ff8-9a920870ec7f)
+<img src = "img/graph-10.png"/>
 * 정점에 연결되어 있는 정점들만 리스트로 나타내는 그래프 표현 방식
 * 그래프 내에 적은 숫자의 간선만을 가지는 희소 그래프(Sparse Graph)에서 사용
 * 모든 정점(혹은 노드)을 인접 리스트에 저장
