@@ -3,6 +3,7 @@
 * 정점(vertex), 간선(edge)의 집합
 
 <img src = "img/graph-1.png"/>
+
 * G = (V, E)
 
 ### 용어
@@ -25,6 +26,7 @@
 * (Vi, Vj)와 (Vj, Vi)는 같은 간선
 
 <img src = "img/graph-2.png"/>
+
 * 그래프 G1
 * V(G1)={A,B,C,D}
 * E(G1)={(A,B), (A,D), (B,C), (B,D), (C,D)}
@@ -39,6 +41,7 @@
 * <Vi, Vj>와 <Vj, Vi>는 서로 다른 간선
 
 <img src = "img/graph-11.png"/>
+
 * 그래프 G2
 * V(G1)={A,B,C,D}
 * E(G1)={<A,B>, <A,D>, <B,C>, <B,D>, <C,D>}
@@ -93,6 +96,7 @@
 # 그래프 구현
 1. 인접 행렬(Adjacency Matrix)
 <img src = "img/graph-9.png"/>
+
 * 2차원 배열로 그래프를 구현하는 방식
 * 그래프에 간선이 많이 존재하는 밀집 그래프(Dense Graph)에서 사용
 * 간선이 존재 : 1, 없는 칸 : 0
@@ -112,6 +116,7 @@
 
 2. 인접 리스트(Adjacency List)
 <img src = "img/graph-10.png"/>
+
 * 정점에 연결되어 있는 정점들만 리스트로 나타내는 그래프 표현 방식
 * 그래프 내에 적은 숫자의 간선만을 가지는 희소 그래프(Sparse Graph)에서 사용
 * 모든 정점(혹은 노드)을 인접 리스트에 저장
