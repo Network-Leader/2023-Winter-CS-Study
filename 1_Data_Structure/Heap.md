@@ -38,6 +38,7 @@
 * 인덱스가 1부터 시작
 
 <img src = "img/heap-3.png"/>
+
 * **왼쪽 자식 노드 index** : 2 * (부모 노드 index)
 * **오른쪽 자식 노드 index** : 2 * (부모 노드 index) + 1
 * **부모 노드 index** : (자식 노드 index) / 2
