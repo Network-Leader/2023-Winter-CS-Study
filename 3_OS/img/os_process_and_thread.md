@@ -23,7 +23,7 @@
 
 - 기본적으로 각 프로세스는 메모리에 별도의 주소 공간에서 실행되기 때문에 한 프로세스가 다른 프로세스의 변수나 자료 구조의 접근 불가
 - IPC/LPC 등의 방법으로 공유 가능
-- 다만, 프로세스의 자원 공유는 단순히 CPU 레지스터 교체 뿐만 아니라 RAN과 CPU 사이 캐시 메모리까지 초기화하기 때문에 자원 부담이 큼
+- 다만, 프로세스의 자원 공유는 단순히 CPU 레지스터 교체 뿐만 아니라 RAM과 CPU 사이 캐시 메모리까지 초기화하기 때문에 자원 부담이 큼
 <br/>
 
 ### 생명 주기
@@ -116,24 +116,11 @@
 - Terminated: 스레드가 실행을 완료하고 종료된 상태, 더는 실행될 수 없으며 메모리에서 제거
 <br/>
 
-#### 상태 전이
-
-프로세스가 실행되는 동안 상태가 OS에 의해 변경되는 것
-
-- Admitted (new → ready): 프로세스 생성을 승인 받음
-- Dispatch (ready→ running): 준비 상태에 있는 여러 프로세스들 중 하나가 스케줄러에 의해 실행됨
-- Interrupt (running → ready): Timeout, 예기치 않은 이벤트가 발생하여 현재 실행 중인 프로세스를 준비 상태로 전환하고, 해당 작업을 먼저 처리
-- I/O or event wait (running → wainting): 실행 중인 프로세스가 입출력이나 이벤트를 처리해야 하는 경우, 입출력이나 이벤트가 끝날 때까지 대기 상태로 전환
-- I/O or event completion (waiting → ready): 입출력이나 이벤트가 모두 끝난 프로세스를 다시 준비 상태로 만들어 스케줄러에 의해 선택될 수 있는 상태로 전환
-<br/>
-
 #### Context Switching
 
 - 멀티 스레딩 환경에서 스레드 간의 실행을 전환
 - 하나의 프로세스 내의 스레드를 교환
 - 컨텍스트 스위칭의 주체는 스케줄러
-- PCB 저장 및 복원 비용, CPU 캐시 메모리 무효화에 따른 비용,
-  프로세스 스케줄링 비용 등의 이유로 오버헤드 발생 가능
 - 프로세스 Context Switching보다 빠름(TCB는 스택 및 간단한 레지스터 포인터 정보만을 저장)
 <br/>
 
@@ -164,5 +151,5 @@
   
 ## 참고자료
 
-https://inpa.tistory.com/entry/%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%E2%9A%94%EF%B8%8F-%EC%93%B0%EB%A0%88%EB%93%9C-%EC%B0%A8%EC%9D%B4#thankYou
+https://inpa.tistory.com/entry/%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%E2%9A%94%EF%B8%8F-%EC%93%B0%EB%A0%88%EB%93%9C-%EC%B0%A8%EC%9D%B4#thankYou  
 https://jaehoney.tistory.com/241
